@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .register-color {
     color: #289BDE;
 }
@@ -23,4 +29,16 @@
 .course-border {
     border: 1px solid #E8E8E8;
     border-radius: 5px;
+}
+
+.course-title {
+    color: #4A4A4A;
+}
+
+.course-description {
+    color: #777777;
+}
+
+.course-price {
+    color: #289BDE
 }
