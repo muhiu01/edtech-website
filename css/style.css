@@ -35,10 +35,14 @@ body {
     color: #4A4A4A;
 }
 
-.course-description {
+.description {
     color: #777777;
 }
 
 .course-price {
     color: #289BDE
+}
+
+.bgcolor {
+    background-color: #289BDE;
 }
