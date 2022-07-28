@@ -1,0 +1,21 @@
+.register-color {
+    color: #289BDE;
+}
+
+.carousel-cover-1 {
+    background: linear-gradient(360deg, #030303 0%, rgba(29, 29, 29, 0.7) 70%), url(/images/cover/cover-1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.carousel-cover-2 {
+    background: linear-gradient(360deg, #121212 0%, rgba(29, 29, 29, 0.7) 70%), url(/images/cover/cover-2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.carousel-cover-3 {
+    background: linear-gradient(360deg, #121212 0%, rgba(29, 29, 29, 0.7) 70%), url(/images/cover/cover-3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
