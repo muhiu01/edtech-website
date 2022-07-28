@@ -228,35 +228,7 @@
                                 <p class="description">Rating & Review</p>
                             </div>
                         </div>
-                        <div>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop">
-                                Read More
-                            </button>
-                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="staticBackdropLabel">Modal Demo</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            Clicking on the modal BACKDROP will automatically close the modal. Bootstrap
-                                            only supports one modal window at a time. Nested modals are not supported as
-                                            we believe them to be poor user experiences.
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Better Understand</button>
-                                            <button type="button" class="btn btn-primary">Understood</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <button class="btn btn-primary bgcolor">Read More</button>
                     </div>
                 </div>
             </div>
@@ -265,18 +237,45 @@
          --------------------->
         <!-- REGISTRATION OPTION START 
         ----------------------------->
-        <section class="container my-5 bgcolor">
+        <section class="container my-5 bgcolor p-5">
             <div
-                class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-evenly align-items-center p-5">
+                class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-evenly align-items-center p-5 my-5">
                 <div class="w-50 text-white text-center text-lg-start">
                     <h1>Ready to join?</h1>
                     <p>If you want to set your goal to explore your talent, we here to reach out to reach your
                         DESTINATION. So don't late to get registered</p>
                 </div>
-                <div class="">
-                    <button class="btn btn-info bg-white border-0 rounded-3"><a class="text-decoration-none"
-                            href="">REGISTER
-                            NOW</a></button>
+
+                <div class="p-5">
+                    <button type="button" class="btn btn-primary px-3 py-" data-bs-toggle="modal"
+                        data-bs-target="#myModal">
+                        Open modal
+                    </button>
+
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Modal Heading</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    Modal body..
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -401,3 +400,147 @@
         </section>
         <!-- STUDENTS FEEDBACK END 
         --------------------------->
+        <!-- ACCORDION START 
+        ------------------->
+        <!-- <section class="">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            What is the difference between flexbox and grid?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingOne" style="">
+                        <div class="accordion-body">
+                            Flexbox was designed specifically for one-dimensional layouts, while
+                            CSS Grid is engineered to enable two-dimensional layouts. The
+                            approach of CSS Grid is the layout first, while the Flexbox approach
+                            is primarily the content. The Flexbox layout is best suited to
+                            application components and small-scale layouts, while the Grid
+                            layout is designed for larger-scale layouts that are not linear in
+                            design.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            What is the difference between bootstrap and tailwind?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo" style="">
+                        <div class="accordion-body">
+                            The main difference between Tailwind CSS and Bootstrap is that
+                            Tailwind CSS is not a UI kit. Unlike UI kits such as Bootstrap,
+                            Tailwind CSS does not have a default theme or built-in UI
+                            components. Instead, it comes with predesigned widgets you can use
+                            to build your site from scratch. Bootstrap is known for its
+                            responsiveness, whereas proponents of Tailwind CSS typically value
+                            the frameworks customizability.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            CSS BOX Model
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree" style="">
+                        <div class="accordion-body">
+                            In CSS, the term "box model" is used when talking about design and layout. The CSS box model
+                            is
+                            essentially a box that wraps around every HTML element. It consists of: margins, borders,
+                            padding, and
+                            the actual content.
+                            Content - The content of the box, where text and images appear
+                            Padding - Clears an area around the content. The padding is transparent
+                            Border - A border that goes around the padding and content
+                            Margin - Clears an area outside the border. The margin is transparent
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                Semantic Elements
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingThree" style="">
+                            <div class="accordion-body">
+                                A semantic element clearly describes its meaning to both the browser and the developer.
+                                Semantic
+                                HTML elements are those that clearly describe their meaning in a human- and
+                                machine-readable way.
+                                Elements such as header, footer and article are all considered semantic because they
+                                accurately
+                                describe the purpose of the element and the type of content that is inside them.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section> -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the
+                        <code>.accordion-flush</code> class. This is the first item's accordion body.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the
+                        <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
+                        this being
+                        filled with some actual content.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the
+                        <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                        exciting
+                        happening here in terms of content, but just filling up the space to make it look, at least at
+                        first
+                        glance, a bit more representative of how this would look in a real-world application.
+                    </div>
+                </div>
+            </div>
+        </div>
