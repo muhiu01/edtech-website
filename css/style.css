@@ -31,6 +31,7 @@ body {
     border-radius: 5px;
 }
 
+.name,
 .course-title {
     color: #4A4A4A;
 }
@@ -43,6 +44,23 @@ body {
     color: #289BDE
 }
 
+.modal-heading,
+.follower {
+    color: #1D1D1D;
+    ;
+}
+
 .bgcolor {
     background-color: #289BDE;
+}
+
+.star {
+    color: gold;
+}
+
+@media only screen and (min-width:768px) {
+    .lg-w-50 {
+        width: 50%;
+    }
+
 }
