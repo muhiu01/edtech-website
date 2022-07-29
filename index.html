@@ -32,19 +32,19 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02 ">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                        <li class="nav-item  me-2">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item me-2">
                             <a class="nav-link" href="#">Courses</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item me-2">
                             <a class="nav-link" href="#">Deals</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item me-2">
                             <a class="nav-link" href="#">Success</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item me-2">
                             <a class="nav-link" href="#">About</a>
                         </li>
                     </ul>
@@ -55,52 +55,58 @@
 
         <!-- NAVBAR END 
             --------------->
-        <section>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active carousel-cover-1 vh-100 d-flex justify-content-center align-items-center"
-                        data-bs-interval="10000">
-                        <div class="text-white text-center w-50">
-                            <h1>Get Started Digital Learning</h1>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of
-                                a page when looking at its
-                                layout</p>
-                            <button class="btn btn-primary">GET STARTED</button>
-                        </div>
-                    </div>
-                    <div class="carousel-item carousel-cover-2 vh-100 d-flex justify-content-center align-items-center"
-                        data-bs-interval="2000">
-                        <div class="text-center text-white w-50">
-                            <h1>Get Started Digital Learning</h1>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of
-                                a page when looking at its
-                                layout</p>
-                            <button class="btn btn-primary">GET STARTED</button>
-                        </div>
-                    </div>
-                    <div
-                        class="carousel-item carousel-cover-3 vh-100 w-100 d-flex justify-content-center align-items-center">
-                        <div class="text-center text-white w-50">
-                            <h1>Get Started Digital Learning</h1>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of
-                                a page when looking at its
-                                layout</p>
-                            <button class="btn btn-primary">GET STARTED</button>
-                        </div>
-                    </div>
+        <section class="container">
+            <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                <div class="carousel-inner sliders ">
+                    <div class="carousel-item active carousel-fade ">
+                        <img src="images/cover/cover-1.png" class="d-block w-100  sliding-img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-white">Complete Python Masterclass for Web Development</h1>
+                            <p class="text-white">Some representative placeholder content for the first slide.</p>
+                            <a href="#" class="btn bg-info btn-primary px-4 fw-bold" tabindex="-1" role="button"
+                                aria-disabled="true">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item active carousel-fade">
+                        <img src="images/cover/cover-2.jpg" class="d-block w-100 sliding-img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-white">Complete Python Masterclass for Web Development</h1>
+                            <p class="text-white">Some representative placeholder content for the first slide.</p>
+                            <a href="#" class="btn bg-info btn-primary px-4 fw-bold" tabindex="-1" role="button"
+                                aria-disabled="true">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item active carousel-fade">
+                        <img src="images/cover/cover-3.jpg" class="d-block w-100 sliding-img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-white">Complete Python Masterclass for Web Development</h1>
+                            <p>Some representative placeholder content for the first slide.</p>
+                            <a class="text-white" href="#" class="btn bg-info btn-primary px-4 fw-bold" tabindex="-1"
+                                role="button" aria-disabled="true">Get Started</a>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </section> -->
+        </section>
     </header>
     <main>
         <!-- COURSE SECTION START  
@@ -513,11 +519,12 @@
         <h1 class="fw-bold fs-1">BEST ED-TECH</h1>
         <p class="description">Akhalia, Neharipara, Madina Market, Sylhet</p>
         <p class="description"> <span class="me-1">Privacy policy</span> | <span class="ms-1">Terms of use</span></p>
-        <p>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+        <p class="fs-1">
+            <a class="text-decoration-none" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a class="text-decoration-none" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a class="text-decoration-none" href="https://www.instagram.com/"><i
+                    class="fab fa-instagram-square"></i></a>
+            <a class="text-decoration-none" href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
         </p>
     </footer>
 
